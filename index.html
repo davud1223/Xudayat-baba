@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+    <title>Xudayat baba</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .x{
+            display: flex;
+            flex-direction: column;
+            justify-self: center;
+            align-items: center;
+            margin-top: 30px;
+        }
+        h2{
+            cursor: pointer;
+        }
+        h2::before{
+            content: "";
+            display: block;
+            height: 4px;
+            width: 100%;
+            background-color: lime;
+            transform: translate(0px, 0px);
+            transition: 1s;
+        }
+        h2::after{
+            content: '';
+            display: block;
+            height: 4px;
+            width: 100%;
+            background-color: red;
+            transform: translate(0px, 0px);
+            transition: .4s;
+        }
+        h2:hover::before{
+            transform: scale(1);
+            transform: translate(0px, 39px);
+        }
+        h2:hover::after{
+            transform: scale(1);
+            transform: translate(0px, -35px);
+        }
+
+    </style>
+</head>
+<body>
+    <div class="x">
+        <h2>Xudayat baba</h2>
+    </div>
+    <div id="carouselExampleFade" class="carousel slide carousel-fade">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="aew.jpg" class="d-block w-100" alt="edw.jpg">
+          </div>
+          <div class="carousel-item">
+            <img src="edw.jpg" class="d-block w-100" alt="ert.jpg">
+          </div>
+          <div class="carousel-item">
+            <img src="ert.jpg" class="d-block w-100" alt="fer.jpg">
+          </div>
+          <div class="carousel-item">
+            <img src="fer.jpg" class="d-block w-100" alt="qwe (1).jpg">
+          </div>
+          <div class="carousel-item">
+            <img src="qwe (1).jpg" class="d-block w-100" alt="wer.jpg">
+          </div>
+          <div class="carousel-item">
+            <img src="wer.jpg" class="d-block w-100" alt="aew.jpg">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
+</body>
+</html>
